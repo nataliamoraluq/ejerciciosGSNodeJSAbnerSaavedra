@@ -7,7 +7,7 @@ async function writeToFile(fileName, data) {
     } catch (error) {
     console.error(`Got an error trying to write the
     file: ${error.message}`);
-    }
+    } 
 }
 
 module.exports = { writeToFile }
