@@ -1,0 +1,15 @@
+{
+  "name": "proyectonodejs",
+  "version": "1.0.0",
+  "description": "Proyecto de prueba para practicar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "prueba",
+    "nodejs"
+  ],
+  "author": "Abner Saavedra",
+  "license": "ISC"
+}
