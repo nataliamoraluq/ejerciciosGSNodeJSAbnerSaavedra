@@ -60,5 +60,5 @@ createDir.createDirectory("./files/respaldo")*/
 copyfile.copyAFile("./files/Participantes200824.txt", "./files/respaldo/Participantes200824.txt")*/
 
 //DELETE ORIGINAL FILE
-const dfile = require("./archivosNodeJS/deleteFile")
-dfile.deleteFile("./files/Participantes200824.txt")
+/*const dfile = require("./archivosNodeJS/deleteFile")
+dfile.deleteFile("./files/Participantes200824.txt")*/

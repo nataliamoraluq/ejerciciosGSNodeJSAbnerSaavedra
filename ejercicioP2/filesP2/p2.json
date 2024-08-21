@@ -1,0 +1,50 @@
+[
+    {
+        "nombre": "Natalia",
+        "sexo": "F",
+        "edad": 20,
+        "direccion": "Cabudare"
+    },
+    {
+        "nombre": "Daniela",
+        "sexo": "F",
+        "edad": 20,
+        "direccion": "Barquisimeto"
+    },
+    {
+        "nombre": "Osmar",
+        "sexo": "M",
+        "edad": 21,
+        "direccion": "Barquisimeto"
+    },
+    {
+        "nombre": "Paula",
+        "sexo": "F",
+        "edad": 18,
+        "direccion": "Barquisimeto"
+    },
+    {
+        "nombre": "Siberia",
+        "sexo": "F",
+        "edad": 21,
+        "direccion": "Barquisimeto"
+    },
+    {
+        "nombre": "David",
+        "sexo": "M",
+        "edad": 21,
+        "direccion": "Cabudare"
+    },
+    {
+        "nombre": "Lino",
+        "sexo": "M",
+        "edad": 20,
+        "direccion": "Barquisimeto"
+    },
+    {
+        "nombre": "Ariadna",
+        "sexo": "F",
+        "edad": 20,
+        "direccion": "Barquisimeto"
+    }
+]
