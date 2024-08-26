@@ -45,7 +45,7 @@ const server = http.createServer((req, res) => {
                     res.end('Error al guardar la información.');
                 } else {
                     res.writeHead(200, { 'Content-Type': 'text/plain' });
-                    res.end('Información guardada correctamente.');
+                    res.end('Informacion guardada correctamente.');
                 }
             });
         });
