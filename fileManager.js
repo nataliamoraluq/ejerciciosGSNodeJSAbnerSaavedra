@@ -6,8 +6,8 @@ const wfile = require("./archivosNodeJS/writeFile")
 
 // WRITTE2, APPEND AND OPEN
 const wfile2 = require("./archivosNodeJS/writeFile")
-const afile = require("./archivosNodeJS/appendFile")
-const ofile = require("./archivosNodeJS/openFile")*/
+const afile = require("./archivosNodeJS/appendFile")*/
+const ofile = require("./archivosNodeJS/openFile")
 
 //RENAME AND DELETE
 /*const dfile = require("./archivosNodeJS/deleteFile")
