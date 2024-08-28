@@ -5,7 +5,6 @@ const url = require('url')
 
 const server = http.createServer((req, res) => {
     const datosURL = url.parse(req.url, true)
-
     console.log(datosURL)
     if (req.method === 'GET' && datosURL.pathname === '/index') {
 
