@@ -1,0 +1,15 @@
+Natalia ML. - IV Cohorte GRACOSOFT - V.30416997
+¿Cómo funciona este servidor?
+Para iniciar: 
+en el navegador 
+utilizar el url: localhost:5001
+
+Para acceder:
+Según las rutas asignadas, se tiene: 
+
+Rutas:
+localhost:5001/ o localhost:5001/index.html ----> para acceder a la pag. principal
+localhost:5001/styles.css ----> para acceder al archivo css
+localhost:5001/autorJSON ----> para acceder al archivo JSON con los datos del autor
+
+Autor:Natalia ML - V.30.416.997.

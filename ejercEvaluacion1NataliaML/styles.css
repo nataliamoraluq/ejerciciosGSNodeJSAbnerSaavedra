@@ -1,0 +1,25 @@
+.authorInfo{
+    background-color: rgb(186, 175, 255);
+    width: auto;
+    height: fit-content;
+    padding: 2em;
+    border-radius: 2vmax;
+    align-content: center;
+}
+h1{
+    color: rgb(51, 8, 92);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+}
+h4{
+    color: rgb(207, 44, 145);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+p{
+    color: rgb(29, 15, 108);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}

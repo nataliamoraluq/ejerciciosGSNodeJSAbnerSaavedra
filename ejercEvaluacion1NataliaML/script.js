@@ -1,16 +1,16 @@
-const file = require("./moduleFS")
+//const file = require("./moduleFS")
 //
 const fechaHoy = new Date().toLocaleDateString();
 console.log("Today's Date:", fechaHoy);
 
 //
 //
-
+/*
 async function autorArchivoJSON(){
 
     try {
         const archivo = await file.readThisFile("./files/autor.json")
-        if(archivo == null && archivo.length == 0){
+        if(archivo == null || archivo.length == 0){
             const data = fs.readThisFile('./files/autor.json');
             const jsonData = JSON.parse(data);
 
@@ -33,4 +33,4 @@ async function autorArchivoJSON(){
     }
 }
 
-module.exports = { autorArchivoJSON}
+module.exports = { autorArchivoJSON}*/

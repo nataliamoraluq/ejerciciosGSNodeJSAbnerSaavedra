@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='http://localhost:5001/styles.css' type="text/css"/>
+    <title>Ejercicio Evaluacion n.1 - Natalia ML</title>
+</head>
+<body>
+    <div class="authorInfo">    
+        <h1> Tu propio servidor HTTP</h1>
+        <h4>Autor: Natalia ML - V.30.416.997</h4>
+        <p>Web developer in development</p>
+        <p>Fecha: <span id="dateHere"></span></p>
+    </div>
+</body>
+<script>
+    const fechaHoy = new Date().toLocaleDateString();
+    document.getElementById("dateHere").innerHTML =fechaHoy;
+</script>
+</html>
