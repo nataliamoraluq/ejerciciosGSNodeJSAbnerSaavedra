@@ -61,22 +61,25 @@ const server = http.createServer((req, res) => {
                 Age: age, 
                 Course: course
             }
-
-            
             //in the .json insert the data here
             fs.appendFile("./files/students.json", JSON.stringify(studToAdd), (err, data) =>{
                 if(err){
                     res.writeHead(404, { 'Content-Type': 'text/plain' });
                     res.end('Path wrong or not found!.');
                 }
-
                 else{
                     res.writeHead(200, { 'Content-Type': 'text/plain' });
                     res.end('Student added to json!.');
                 }
             });
         });
-    } else {
+    }else if (req.method === 'GET' && req.url === '/students'){
+        //aqui va el show all students in the JSOn
+    }else if (req.url === '/student/:id' && ( req.method === 'GET' || req.method === 'PUT')){
+        //if get, by id show that student data ("detailed student")
+        //if put ---> update the student data by that id
+    }
+    else {
         res.writeHead(404, { 'Content-Type': 'text/plain' });
         res.end('Página no encontrada.');
     }
