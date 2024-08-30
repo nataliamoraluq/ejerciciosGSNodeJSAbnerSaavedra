@@ -76,3 +76,17 @@ p{
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+#StudentList, li{
+    background-color: rgb(215, 156, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(69, 13, 134);
+    width: fit-content;
+    margin: 1%;
+    padding: 1.7vmax;
+    height: fit-content;
+    border-radius: 1.7vmax;
+    font-size: 1.2rem;
+    list-style: none;
+
+}

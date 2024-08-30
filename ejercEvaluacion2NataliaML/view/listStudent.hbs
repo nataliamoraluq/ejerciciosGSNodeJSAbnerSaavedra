@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='http://localhost:3020/public/styles.css' type="text/css"/>
+    <title>Student List</title>
+</head>
+<body>
+    <ul id="StudentList">
+        {{#each stud}}
+        <li> -- {{this.name}}</li>
+        {{/each}}
+    </ul>
+</body>
+</html>
