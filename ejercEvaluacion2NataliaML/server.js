@@ -30,9 +30,9 @@ app.set('view engine', 'hbs');
 // SET THE FOLDER TO VIEW
 app.set('view', __dirname + '/view');
 // render the update hbs file 
-app.get('/updateStud', (req, res)=>{
+/*app.get('/updateStud', (req, res)=>{
     res.render('updateStudent')
-})
+})*/
 
 // Enviamos un archivo estático / (main page)
 app.get('/', (req, res)=>{
@@ -87,7 +87,9 @@ app.put('/students/:id', (req, res)=> {
         stud.name = name;
         stud.age = age;
         stud.course = course;
-        res.status(200).json({message: 'Student updated!'})
+        //
+        res.render('updateStudent', stud=stud)
+        //res.status(200).json({message: 'Student updated!'})
     }
     else{
         res.status(400).send('Student not found/non existing')
