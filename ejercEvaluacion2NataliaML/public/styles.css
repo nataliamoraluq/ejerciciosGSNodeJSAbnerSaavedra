@@ -1,0 +1,54 @@
+.authorInfo{
+    background-color: rgb(91, 159, 238);
+    width: auto;
+    height: fit-content;
+    padding: 2em;
+    border-radius: 2vmax;
+    align-content: center;
+}
+
+#formStudent{
+    background-color: rgb(156, 202, 255);
+    width: auto;
+    height: fit-content;
+    padding: 2em;
+    border-radius: 2vmax;
+    align-content: center;
+}
+
+#formStudent input, label{
+    background-color: rgb(156, 202, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(21, 4, 41);
+    width: auto;
+    height: fit-content;
+    border-radius: 2vmax;
+    font-size: 1.2rem;
+}
+
+label{
+    background-color: rgb(156, 202, 255);
+}
+
+h1{
+    color: rgb(35, 68, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+}
+h3{
+    color: rgb(33, 61, 220);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+}
+h4{
+    color: rgb(33, 61, 220);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+}
+
+p{
+    color: rgb(57, 75, 176);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
