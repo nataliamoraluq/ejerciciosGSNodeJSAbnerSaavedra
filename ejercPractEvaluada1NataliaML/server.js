@@ -86,6 +86,7 @@ const server = http.createServer((req, res) => {
                             console.error(err)
                         else
                             console.log("OBJT TO JSON" +objToJsoN)
+                            res.end('Json working!.');
                     })
 
                 }
