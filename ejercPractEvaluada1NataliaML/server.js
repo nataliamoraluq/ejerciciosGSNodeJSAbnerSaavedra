@@ -81,14 +81,12 @@ const server = http.createServer((req, res) => {
                     objData.push(studToAdd);
                     let objToJsoN = JSON.stringify(objData)
 
-                    fs.writeFile("./files/autor.json", JSON.stringify(objToJsoN), (err, data) =>{
+                    fs.writeFile("./files/students.json", objToJsoN, (err, data) =>{
                         if(err)
                             console.error(err)
                         else
                             console.log("OBJT TO JSON" +objToJsoN)
                     })
-
-
 
                 }
             });
