@@ -55,6 +55,7 @@ const server = http.createServer((req, res) => {
             const name = parsedData.get('name');
             const age = parsedData.get('age');
             const course = parsedData.get('course');
+
             // Guardar en un archivo JSON
             let studToAdd = {
                 Name: name, 
@@ -62,17 +63,33 @@ const server = http.createServer((req, res) => {
                 Course: course
             }
 
-            
+            //JSON.stringify(studToAdd),
             //in the .json insert the data here
-            fs.appendFile("./files/students.json", JSON.stringify(studToAdd), (err, data) =>{
+            //JSOn
+            fs.readFile("./files/students.json", (err, data) =>{
                 if(err){
                     res.writeHead(404, { 'Content-Type': 'text/plain' });
                     res.end('Path wrong or not found!.');
+                    console.log(err)
                 }
-
                 else{
                     res.writeHead(200, { 'Content-Type': 'text/plain' });
+                    console.log("data", JSON.parse(data))
                     res.end('Student added to json!.');
+                    //
+                    let objData = JSON.parse(data);
+                    objData.push(studToAdd);
+                    let objToJsoN = JSON.stringify(objData)
+
+                    fs.writeFile("./files/autor.json", JSON.stringify(objToJsoN), (err, data) =>{
+                        if(err)
+                            console.error(err)
+                        else
+                            console.log("OBJT TO JSON" +objToJsoN)
+                    })
+
+
+
                 }
             });
         });
@@ -82,7 +99,7 @@ const server = http.createServer((req, res) => {
     }
 });
 
-const PORT = 3000;
+const PORT = 3001;
 // Iniciar el servidor en el puerto 3000
 server.listen(PORT, () => {
     console.log(`Servidor escuchando en el puerto ${PORT}`);
