@@ -18,11 +18,96 @@ app.use(bodyParse.urlencoded({
 const port = 3000
 
 app.listen(port, ()=>{
-    console.log(`Server working i http://localhost:${port}`)
+    console.log(`Server working in http://localhost:${port}`)
 })
 
 var students = []
 //
+// url of the static files
+app.use('/public', express.static(__dirname + '/public'))
+// SET EL MOTOR DE LAS PLANTILLAS
+app.set('view engine', 'hbs');
+// SET THE FOLDER TO VIEW
+app.set('view', __dirname + '/view');
+// render the update hbs file 
+app.get('/updateStud', (req, res)=>{
+    res.render('updateStudent')
+})
+
+// Enviamos un archivo estático / (main page)
+app.get('/', (req, res)=>{
+    res.sendFile(path.join(__dirname, 'index.html'))
+})
+
+// SHOW STUDENTS
+app.get('/', (req, res)=>{
+    res.status(200).json(students)
+})
+
+// POST GET STUDENT INFO for the form
+app.post('/students', (req, res)=>{
+
+    console.log("Request body: ", req.body)
+    //para traer y gaurdar la info del form ----> req.bod
+    const { name, age, course } = req.body
+    const estudiante = {name, age, course }
+    estudiante.id = students.length + 1
+    students.push(estudiante)
+    //
+    res.status(200).json("Try done right!")
+})
+
+// ADD STUDENT
+app.post('/add', (req, res)=>{
+
+    console.log("Request body: ", req.body)
+    const { name, age, course } = req.body
+    const estudiante = {name, age, course }
+    estudiante.id = students.length + 1
+    students.push(estudiante)
+    res.status(200).json("Student add sucesfully!")
+})
+
+// FIND STUDENT
+app.get('/students/:id', (req, res)=>{
+    console.log("Stud. Id: ", req.params.id)
+    const student = students.find(t => t.id == req.params.id)
+    if(student)
+        res.status(200).json({student: student, mensaje: "Student found!"})
+    else
+        res.status(400).json({mensaje: "Student not found!"})
+})
+
+// UPDATE STUDENT
+app.put('/students/:id', (req, res)=> {
+    const stud = students.find((s) => s.id == req.params.id);
+
+    if(stud){
+        const { name, age, course } = req.body
+        stud.name = name;
+        stud.age = age;
+        stud.course = course;
+        res.status(200).json({message: 'Student updated!'})
+    }
+    else{
+        res.status(400).send('Student not found/non existing')
+    }
+})
+
+// DELETE STUDENT
+app.delete('/students/:id', (req, res) =>{
+    var student = students.find((s) => s.id == req.params.id);
+
+    if(student){
+        students = students.filter(s => s.id != student.id);
+        res.status(200).json({message: 'Student deleted correctly!'})
+    }
+    else{
+        res.status(400).send('Student not found/non existing')
+    }
+})
+
+/*
 const server = http.createServer((req, res) => {
     const datosURL = url.parse(req.url, true)
     console.log(datosURL)
@@ -96,4 +181,4 @@ const server = http.createServer((req, res) => {
         res.writeHead(404, { 'Content-Type': 'text/plain' });
         res.end('Página no encontrada.');
     }
-});
+});*/

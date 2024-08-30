@@ -7,6 +7,30 @@
     align-content: center;
 }
 
+#formStudentUpdate{
+    background-color: rgb(156, 202, 255);
+    width: auto;
+    height: fit-content;
+    padding: 2em;
+    border-radius: 2vmax;
+    align-content: center;
+}
+
+#formStudentUpdate input, label{
+    background-color: rgb(156, 202, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(21, 4, 41);
+    width: auto;
+    height: fit-content;
+    border-radius: 2vmax;
+    font-size: 1.2rem;
+}
+
+label{
+    background-color: rgb(156, 202, 255);
+}
+/**/
+
 #formStudent{
     background-color: rgb(156, 202, 255);
     width: auto;
