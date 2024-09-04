@@ -46,15 +46,12 @@ app.get('/', (req, res)=>{
 
 // ADD STUDENT
 app.post('/add', (req, res)=>{
-
     //console.log("Request body: ", req.body)
     const { name, age, course } = req.body
     const estudiante = {name, age, course }
     estudiante.id = students.length + 1
     students.push(estudiante)
-
     //
-
     fs.readFile("./files/students.json", (err, data) =>{
         if(err){
             res.send('Path wrong or not found!.');
