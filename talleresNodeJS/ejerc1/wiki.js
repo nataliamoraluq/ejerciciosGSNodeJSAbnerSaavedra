@@ -9,8 +9,15 @@ router.get("/", function (req, res) {
 });
    // About page route.
 router.get("/about", function (req, res) {
-   res.send("About this wiki");
+   res.send("About this wiki but with GET");
 });
+
+//router - path functions
+router.post("/about", (req, res) => {
+   res.send("About this wiki but with POST");
+});
+
+//module export the router so we can use it in the main app
 module.exports = router;
 
 
