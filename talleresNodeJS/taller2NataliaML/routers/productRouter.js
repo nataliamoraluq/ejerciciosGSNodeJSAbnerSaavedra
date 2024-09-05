@@ -29,7 +29,7 @@ router.put('/products/:id',productController.updateProducts)
 router.delete('/products/:id', productController.deleteProducts)
 
 //FILTER PRODUCT BY PRICE
-//router.get('/byPrice/:price',)
+router.get('/byQuantity/:quantity', productController.filterProducts)
 
 //module export the router so we can use it in the main app
 module.exports = router;

@@ -60,15 +60,15 @@ exports.deleteProducts = (req, res) =>{
 }
 
 //FILTER PRODUCT BY PRICE
-/*exports.filterProducts = (req, res)=>{
-    console.log("price:", req.params.price)
-    let productPrice = []
-    productPrice = productos.filter(t => t.price === req.params.price)
-    if(productPrice)
-        res.status(200).json({productPrice: productPrice})
+exports.filterProducts = (req, res)=>{
+    console.log("Id: ", req.params.quantity)
+    const producto = productos.filter(t => parseInt(t.quantity) == parseInt(req.params.quantity))
+    if(producto)
+        res.status(200).json({producto: producto})
     else
-        res.status(400).json({mensaje: "Product by price not found"})
-}*/
+        res.status(400).json({mensaje: "Producto no encontrado"})
+}
+
 /*router.get('/byPrice/:price', (req, res)=>{
     console.log("price:", req.params.price)
     let productPrice = []
