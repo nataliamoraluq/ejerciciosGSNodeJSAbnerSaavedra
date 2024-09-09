@@ -5,6 +5,10 @@
     "express": "^4.19.2",
     "express-async-handler": "^1.2.0",
     "hbs": "^4.2.0",
+<<<<<<< HEAD
+=======
+    "mysql2": "^3.11.0",
+>>>>>>> 7022353d782ccc2cfc2a2f432cb0aac056b9df1d
     "sequelize": "^6.37.3"
   }
 }
