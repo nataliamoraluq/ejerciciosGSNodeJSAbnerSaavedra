@@ -11,5 +11,8 @@
     "nodejs"
   ],
   "author": "Abner Saavedra",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "proyectonodejs": "file:"
+  }
 }

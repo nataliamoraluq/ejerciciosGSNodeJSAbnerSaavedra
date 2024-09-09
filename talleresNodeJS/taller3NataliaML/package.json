@@ -1,0 +1,20 @@
+{
+  "name": "taller3nataliaml",
+  "version": "1.0.0",
+  "description": "Artículo de Medium mostrando como crear una API con la librería Express",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0",
+    "sequelize": "^6.37.3",
+    "taller3nataliaml": "file:"
+  }
+}
